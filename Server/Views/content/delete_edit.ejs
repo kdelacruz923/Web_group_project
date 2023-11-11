@@ -1,0 +1,57 @@
+<div class="container">
+    <h1 class="col-lg-6 col-md-10 col-sm-10"><%= title %> Product</h1>
+    <hr>
+    <div id="messageArea"></div>
+
+    <div class="row justify-content-lg-center g-3">
+      <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Product Name</span>
+          <input id="productName" name="productName" type="text" class="form-control" 
+          value="<%= product.Name %>"
+          aria-label="Product Name" aria-describedby="Product Name Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Product Description</span>
+            <input id="productDescription" name="productDescription" type="text" class="form-control" 
+            value="<%= product.Description %>"
+            aria-label="Product Description" aria-describedby="Product Description Input" required>
+          </div>
+
+        <div class="input-group mb-3">
+        <span class="input-group-text">Price</span>
+        <input id="productPrice" name="productPrice" type="text" class="form-control" 
+        value="<%= product.Price %>"
+        aria-label="Product Price" aria-describedby="Product Price Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+        <span class="input-group-text">Quantity</span>
+        <input id="productQuantity" name="productQuantity" type="text" class="form-control" 
+        value="<%= product.Quantity %>"
+        aria-label="Product Quantity" aria-describedby="Product Quantity Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+        <span class="input-group-text">Category</span>
+        <input id="productCategory" name="productCategory" type="text" class="form-control" 
+        value="<%= product.Category %>"
+        aria-label="Product Category" aria-describedby="Product Category Input" required>
+        </div>
+
+
+        
+        <% if(title == "Edit") { %>
+        <button id="editButton" type="submit" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i> Edit</button>
+        <% } else {%>
+        <button id="addButton" type="submit" class="btn btn-primary"><i class="fas fa-plus-circle fa-lg"></i> Add</button>
+        <% } %>  
+
+        <a href="/product-list" id="cancelButton" type="button" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</a>
+      
+      </form>
+
+    </div>
+</div>

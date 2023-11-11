@@ -1,0 +1,25 @@
+{
+    "users1":
+    [
+        {
+            "Name":"Karen Dela Cruz" ,
+            "Email":"kdelac14@my.centennialcollege.ca" ,
+            "Password": "123456" ,
+            "Created": { "$date": "2023-11-08T12:00:00Z" },
+            "Updated": { "$date": "2023-11-08T12:00:00Z" }
+        },
+        {  "Name":"admin3" ,
+            "Email":"admin3@example.com" ,
+            "Password": "123456" ,
+            "Created": { "$date": "2023-11-08T12:00:00Z" } ,
+            "Updated": { "$date": "2023-11-08T12:00:00Z" }
+        },
+        {
+            "Name":"admin4" ,
+            "Email":"admin4@example.com" ,
+            "Password": "123456" ,
+            "Created": { "$date": "2023-11-08T12:00:00Z" },
+            "Updated": { "$date": "2023-11-08T12:00:00Z" }
+        }
+    ]    
+}
